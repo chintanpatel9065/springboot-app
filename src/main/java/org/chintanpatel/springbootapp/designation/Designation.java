@@ -14,14 +14,14 @@ public class Designation {
 
     @NotEmpty(message = "Please Provide Designation Type")
     @Column(name = "designation_type", nullable = false)
-    private String designationName;
+    private String designationType;
 
     public Designation() {
     }
 
-    public Designation(Long designationId, String designationName) {
+    public Designation(Long designationId, String designationType) {
         this.designationId = designationId;
-        this.designationName = designationName;
+        this.designationType = designationType;
     }
 
     public Long getDesignationId() {
@@ -32,11 +32,11 @@ public class Designation {
         this.designationId = designationId;
     }
 
-    public String getDesignationName() {
-        return designationName;
+    public String getDesignationType() {
+        return designationType;
     }
 
-    public void setDesignationName(String designationName) {
-        this.designationName = designationName;
+    public void setDesignationType(String designationType) {
+        this.designationType = designationType;
     }
 }

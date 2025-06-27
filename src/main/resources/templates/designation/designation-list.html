@@ -23,7 +23,7 @@
         </thead>
         <tbody>
             <tr th:each="designation : ${designationList}">
-                <td th:text="${designation.designationName}"></td>
+                <td th:text="${designation.designationType}"></td>
                 <td>
                     <a th:href="@{/designations/manageDesignation/{designationId}(designationId=${designation.designationId})}" class="link-success">Edit</a>
                     &nbsp;|&nbsp;
