@@ -52,6 +52,7 @@ public class DepartmentController {
         return "department/department-form";
     }
 
+    @GetMapping("/departments/deleteDepartment/{departmentId}")
     public  String deleteDepartment(@PathVariable Long departmentId){
         if (departmentId != null){
             departmentService.deleteDepartmentById(departmentId);
